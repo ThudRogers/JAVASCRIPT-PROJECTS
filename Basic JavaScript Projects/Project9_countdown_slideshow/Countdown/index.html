@@ -2,50 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Makes the page responsive on mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Slideshow</title>
+
+    <!-- External stylesheet (if you have CSS_File.css in your project folder) -->
     <link rel="stylesheet" type="text/css" href="CSS_File.css">
 
-     <!--Styling-->
+    <!-- Internal CSS for quick styling -->
     <style>
-
         body {
-            font-family: Arial, sans-serif;
-            background-color: #303030d3;
-            color: #ffffff;
-            padding: 20px;
+            font-family: Arial, sans-serif; /* Font for the whole page */
+            background-color: #303030d3;   /* Dark semi-transparent background */
+            color: #ffffff;                /* White text */
+            padding: 20px;                 /* Space inside the body */
         }
 
         p {
-            margin: 12px 0;
+            margin: 12px 0;                /* Spacing above and below paragraphs */
         }
 
         input {
-            padding: 5px;
-            margin-right: 10px;
+            padding: 5px;                  /* Padding inside text box */
+            margin-right: 10px;            /* Space to the right of input */
         }
 
         button {
-            padding: 5px 10px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            box-shadow: #aceebc 0px 0px 3px;
-            border: solid 1px #aceebc;
-            border-radius: 5px;
-            font-weight: bold;
+            padding: 5px 10px;             /* Button padding */
+            cursor: pointer;               /* Changes mouse cursor to pointer */
+            background-color: #4CAF50;     /* Green button */
+            color: white;                  /* White text */
+            box-shadow: #aceebc 0px 0px 3px; /* Light shadow effect */
+            border: solid 1px #aceebc;     /* Light green border */
+            border-radius: 5px;            /* Rounded edges */
+            font-weight: bold;             /* Bold text */
         }
     </style>
-
 </head>
 <body>
 
+    <!-- Instructions for the user -->
     <p>How many seconds would you like to set your alarm for?</p>
+
+    <!-- Input box for the user to type a number of seconds -->
     <input id="seconds" value=""/>
+
+    <!-- Button that triggers the countdown() function when clicked -->
     <button onclick="countdown()">Click here</button>
+
+    <!-- Paragraph that will display the countdown timer -->
     <p id="timer"></p>
     
-<script src="JS/main.js"></script>
-<script src="JavaScript_File.js"></script>
+    <!-- Links to external JavaScript files -->
+    <!-- main.js can contain shared functions -->
+    <script src="JS/main.js"></script>
+    <!-- JavaScript_File.js can contain the countdown function -->
+    <script src="JavaScript_File.js"></script>
+
 </body>
 </html>
