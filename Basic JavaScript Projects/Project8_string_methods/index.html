@@ -5,35 +5,38 @@
     <meta charset="UTF-8">
     <title>Project 8 - String Methods</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to your JavaScript file where the functions are defined -->
     <script src="JS/main.js"></script>
     <style>
+        /* Basic styling for the page */
         body {
             font-family: Arial, sans-serif;
-            background-color: #303030d3;
-            color: #ffffff;
+            background-color: #303030d3; /* Dark semi-transparent background */
+            color: #ffffff; /* White text */
             padding: 20px;
         }
 
         p {
-            margin: 12px 0;
+            margin: 12px 0; /* Adds space between paragraphs */
         }
 
         input {
             padding: 5px;
-            margin-right: 10px;
+            margin-right: 10px; /* Space between input and button */
         }
 
         button {
             padding: 5px 10px;
-            cursor: pointer;
-            background-color: #4CAF50;
+            cursor: pointer; /* Pointer cursor on hover */
+            background-color: #4CAF50; /* Green background */
             color: white;
-            box-shadow: #aceebc 0px 0px 3px;
+            box-shadow: #aceebc 0px 0px 3px; /* Subtle glow */
             border: solid 1px #aceebc;
-            border-radius: 5px;
+            border-radius: 5px; /* Rounded corners */
             font-weight: bold;
         }
 
+        /* IDs Ride and Vote could be used by JS (not in this file) */
         #Ride,
         #Vote {
             margin-top: 10px;
@@ -44,14 +47,35 @@
 
 <body>
     <h1>Basic JavaScript Project: String Methods</h1>
+
+    <!-- Concatenate method demo -->
     <p id="Concatenate"></p>
     <button onclick="make_Words()">Click here for a sentence</button><br>
 
+    <!-- Slice method demo -->
     <p id="Slice"></p>
     <button onclick="slicing()">CLICK HERE</button>
 
+    <!-- Search/find method demo -->
     <p id="output"></p>
     <button onclick="findWord()">Find Word</button>
+
+    <!-- Number to string conversion demo -->
+    <p id="Numbers_to_string"></p>
+    <button onclick="string_Method()">Click Here</button>
+
+    <!-- Precision method demo -->
+    <p id="Precision"></p>
+    <button onclick="precision_Method()">Click here.</button>
+
+    <!-- Fixed (toFixed) method demo -->
+    <p id="Fixer"></p>
+    <button onclick="Fixed()">Click here.</button>
+
+    <!-- ValueOf method demo -->
+    <p id="Value"></p>
+    <button onclick="the_Value()">Click here.</button>
+
 </body>
 
 </html>
