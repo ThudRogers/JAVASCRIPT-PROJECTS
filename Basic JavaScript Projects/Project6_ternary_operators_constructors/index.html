@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project 6: Ternary Operators & Constructors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/main.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #303030d3;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            box-shadow: #aceebc 0px 0px 3px;
+            border: solid 1px #aceebc;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #Ride,
+        #Vote {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Riders must be at least 52 centimetrs tall to ride</p>
+    <input id="Height" value="52" />
+    <button onclick="Ride_Function()">Click Here</button>
+    <p id="Ride"></p><br>
+
+    <p>You must be at least 18 to vote</p>
+    <input id="Age" value="18" />
+    <button onclick="Vote_Function()">Click Here</button>
+    <p id="Vote"></p>
+
+    <p> Click to see who's driving what car!</p>
+    <button onclick="myFunction()">Click Here</button>
+    <p id="Keywords_and_Constructors"></p><br>
+
+    <p>Click here to count</p>
+    <button onclick="count_Function()">Click Here</button>
+    <p id="Counting"></p><br>
+
+</body>
+
+</html>
