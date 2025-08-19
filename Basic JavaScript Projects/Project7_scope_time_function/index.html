@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Styles for the page -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #303030d3; /* Dark background with transparency */
+            color: #ffffff; /* White text color */
+            padding: 20px;
+        }
+
+        p {
+            margin: 12px 0; /* Adds vertical spacing to paragraphs */
+        }
+
+        input {
+            padding: 5px; /* Adds space inside the input field */
+            margin-right: 10px; /* Adds space between input and button */
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            box-shadow: #aceebc 0px 0px 3px; /* Light green shadow around the button */
+            border: solid 1px #aceebc; /* Light green border */
+            border-radius: 5px; /* Rounded corners */
+            font-weight: bold; /* Bold text */
+        }
+
+        #Ride,
+        #Vote {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Character encoding and mobile viewport settings -->
+    <meta charset="UTF-8">
+    <title>Project 7: Scope & Time Function</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Connects external JavaScript file -->
+    <script src="JS/main.js"></script>
+
+    <!-- Section: Display the current date -->
+    <p>Click the button</p>
+    <button onclick="get_Date()">Click Here</button>
+    <p id="Greeting"></p><br> <!-- This will show the date -->
+
+    <!-- Section: Run a conditional message -->
+    <p>Click the button</p>
+    <button onclick="myConditional()">Click Here</button>
+    <p id="Condition"></p><br> <!-- This will show the result of the condition -->
+
+    <!-- Section: Input field to type in number of Goblins -->
+    <p>How many Goblins have you slain?:</p>
+    <input id="Goblin" value="" /> <!-- User enters a number -->
+    <p id="Goblin_Count"></p> <!-- Result message will go here -->
+    <button onclick="Goblin_Count()">Click here</button><br>
+
+    <!-- Section: Display part of the day (e.g., Morning, Afternoon, Evening) -->
+    <p id="Time_of_day"></p> <!-- Message about time of day will go here -->
+    <button onclick="Time_function()">Click here to get the time.</button><br>
+</body>
+
+</html>
