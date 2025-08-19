@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Slideshow</title>
+    <link rel="stylesheet" type="text/css" href="CSS_File.css">
+
+     <!--Styling-->
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #303030d3;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            box-shadow: #aceebc 0px 0px 3px;
+            border: solid 1px #aceebc;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p>How many seconds would you like to set your alarm for?</p>
+    <input id="seconds" value=""/>
+    <button onclick="countdown()">Click here</button>
+    <p id="timer"></p>
+    
+<script src="JS/main.js"></script>
+<script src="JavaScript_File.js"></script>
+</body>
+</html>
