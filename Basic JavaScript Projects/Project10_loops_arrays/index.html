@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project 10: Loops & Arrays</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--STYLING -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #303030d3;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            box-shadow: #aceebc 0px 0px 3px;
+            border: solid 1px #aceebc;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #Ride,
+        #Vote {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Loops & Arrays Project</h1> <!-- Page heading -->
+    </header>
+    <main>
+        <!-- Placeholder for main content (currently empty) -->
+    </main>
+
+    <!-- Link to external JavaScript file containing all functions -->
+    <script src="JS/main.js"></script>
+
+    <!-- String Loop Example -->
+    <p id="ShowString"></p> <!-- Placeholder for output of StringDemo() -->
+    <button onclick="StringDemo()">Click here to execute the loop.</button>
+
+    <!-- Instruments List Example -->
+    <p id="List_of_Instruments"></p> <!-- Placeholder for output of forLoop() -->
+    <button onclick="forLoop()">Click Here</button>
+
+    <!-- Array Example -->
+    <p id="Array"></p> <!-- Placeholder for output of arrayFunction() -->
+    <button onclick="arrayFunction()">Click Here</button>
+
+    <!-- Constant Example -->
+    <p id="Constant"></p> <!-- Placeholder for output of constantFunction() -->
+    <button onclick="constantFunction()">Click Here</button>
+
+    <!-- Let Keyword Example -->
+    <p id="letCheck"></p> <!-- Placeholder for output of let218() -->
+    <button onclick="let218()">Click Here</button>
+
+    <!-- Return PI Example -->
+    <p id="PI"></p> <!-- Placeholder for displaying PI value -->
+    <!-- Inline onclick calls returnPI() and sets the paragraph text -->
+    <button onclick="document.getElementById('PI').innerHTML = returnPI()">Click Here</button>
+
+    <!-- Goblin Object Example -->
+    <p id="Goblin_Stats"></p> <!-- Placeholder for Goblin stats -->
+    <button onclick="displayGoblinStats()">Show Goblin Stats</button><br>
+    <br>
+    <!-- Break Loop Example -->
+    <button onclick="runBreakExample()">Run Break Example</button>
+    <p id="break1"></p><br> <!-- Output for break loop -->
+
+    <!-- Continue Loop Example -->
+    <button onclick="runContinueExample()">Run Continue Example</button>
+    <p id="continue1"></p> <!-- Output for continue loop -->
+
+</body>
+
+</html>
