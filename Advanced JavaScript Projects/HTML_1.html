@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JavaScript/JavaScript_1.js"></script>
+    <title>Advanced JS</title>
+     <!--Styling-->
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #303030d3;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            box-shadow: #aceebc 0px 0px 3px;
+            border: solid 1px #aceebc;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        #Ride,
+        #Vote {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<h1>What is your favorite creature?</h1>
+<h3>Pick your favorite creature from the list:</h3>
+<ul>
+    <li>Goblin</li>
+    <li>Mummy</li>
+    <li>Vampire</li>
+    <li>Gargoyle</li>
+    <li>Slime</li>
+    <li>Skeleton</li>
+    <li>Orc</li>
+</ul>
+<h3>Enter your choice below:</h3>
+<body>
+<input id="Creature_Input" type="text">
+<button onclick="Creature_Function()">Submit Creature</button>
+<p id="Output"></p>
+</body>
+</html>
