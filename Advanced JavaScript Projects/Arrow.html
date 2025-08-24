@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>The script element</h1>
+
+    <p id="demo"></p>
+
+    <script>
+        // Define arrow function
+        const toCelsius = (f) => {
+            return (5 / 9) * (f - 32); 
+        };
+
+        // Call the function
+        let value = toCelsius(77);
+        document.getElementById("demo").innerHTML = value;
+    </script>
+
+</body>
+</html>
