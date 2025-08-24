@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Running JavaScript in the Console</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p id="globalVariables" onclick="global()">Global - click here</p>
+    <p id="localVariables" onclick="local()">Local - click here</p>
+    <hr>
+
+    <p id="concat" onclick="concatenate()">Click here for concatenated sentence</p>
+    <hr>
+    <button onclick="newCourse()">Click here for new course</button>
+    <p id="displayCourse"></p>
+    <hr>
+
+    <p id="displayAge"></p>
+
+    <h1>The Window Object</h1>
+    <h2>The alert() Method</h2>
+
+    <p>Click the button to display an alert box.</p>
+
+    <canvas id="ID_Name" width="500" height="250" style="border:5px solid black;"></canvas>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <h1 class="Click">This text will change!</h1>
+    <h3 class="Click">"This text will not change</h3>
+    <button onclick="Hello_World_Function()">Click me!</button>
+
+    <iframe style="width:100%;height:100px"></iframe>
+    <iframe style="width:100%;height:100px"></iframe>
+    <iframe style="width:100%;height:100px"></iframe>\
+
+
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
+    <script>
+        //a and b are global variables that can be edited in the console
+        let a = 3;
+        let b = 4;
+
+        function global() {
+            result = a + b;
+            document.getElementById("globalVariables").innerHTML = "Global variable a (" + a + ") plus global variable b (" + b + ") equals " + result;
+        }
+
+        function local() {
+            let c = 4;
+            let d = 3;
+            result = c + d;
+            document.getElementById("localVariables").innerHTML = "Local variable c (" + c + ") plus local variable d (" + d + ") equals"
+                + result;
+        }
+        //Declare values for sentence1 and sentence2 in the console
+        let sentence1;
+        let sentence2;
+
+        function concatenate() {
+            //Concatenate sentence1 and sentence2 using 
+            //the .concat() method
+            let concatSent = sentence1.concat(sentence2);
+
+            //Display result on webpage
+            document.getElementById("concat").innerHTML = concatSent;
+
+            //Display result in the console
+            console.log(concatSent);
+        }
+
+        function newCourse(Name, Type, Duration) {
+            this.courseName = "Today's new course is: " + Name + "<br>";
+            this.courseType = "Type: " + Type + "<br>";
+            this.courseDur = "Course Lenth: " + Duration + " hours";
+        }
+
+        let js = new Course("JavaScript", "Code", 55);
+        let py = new Course("Python", "Code", 90);
+
+        //get user input adn calculate age based on the year
+        let year = prompt("Type in the year you were born");
+        let yearNow = new Date().getFullYear();
+        let age = math.floor(yearNow - year);
+
+        window.name = "myWindowName";
+
+        function myFunction() {
+            window.open("https://www.w3schools.com");
+        }
+
+        function Hello_World_Function() {
+            var A = document.getElementsByClassName("Click");
+            A[0].innerHTML = "The text has changed!";
+        }
+
+        const c = document.getElementById("myCanvas");
+        const ctx = c.getContext("2d");
+
+        const grd = ctx.createLinearGradient(0, 0, 170, 0);
+        grd.addColorStop(0, "black");
+        grd.addColorStop(1, "white");
+
+        ctx.fillStyle = grd;
+        ctx.fillRect(20, 20, 150, 100);
+
+    </script>
+</body>
+
+</html>
