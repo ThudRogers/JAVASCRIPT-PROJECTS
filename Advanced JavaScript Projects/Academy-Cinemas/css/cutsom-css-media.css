@@ -1,0 +1,60 @@
+@media screen and (max-width: 320px) {
+
+    /*Calc(minumum size + (maximum size - minimum size) * ((viewport width - minimum viewport width) / (maximum viewport width - minimum viewport width)))*/
+    h1 {
+        font-size: calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    h4 {
+        font-size: calc(25px + (35 - 25) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    .lead, .btn{
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    .yellow-btn{
+        font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1920 - 320)));
+
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .navbar-collapse {
+
+        background-color: var(--secondary-color);
+        border-bottom: 5px solid rgb(98, 0, 0);
+        margin-top: 14px;
+        /* Adjusts the top margin of the nav links */
+        margin-left: -15px;
+        margin-right: -15px;
+
+    }
+
+    .nav-link {
+        margin-left: 20px;
+        /* Adjusts the left margin of the nav links */
+    }
+
+    .dropdown-item {
+        text-align: left;
+        /* Aligns the text to the left in the dropdown menu */
+        padding-left: 60px;
+        /* Adds padding to the left of the dropdown items */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+html{
+    scroll-padding-top: 300px; /* Adjusts the scroll padding for smooth scrolling */
+}
+
+    img {
+        margin-bottom: 30px;
+    }
+    .container{
+        padding: 50px; 
+    }
+}

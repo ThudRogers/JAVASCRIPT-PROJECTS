@@ -1,0 +1,388 @@
+/*Font from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+/*Font from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+
+
+/*Creates global CSS variables that can be reused throughout the file*/
+:root {
+    --main-color: rgb(126, 123, 130);
+    --main-color-accent: rgb(237, 192, 3);
+    --main-color-transparent: rgba(126, 123, 130, 0.8);
+    --secondary-color: rgba(128, 0, 0, 0.9);
+    --accent-color: rgb(36, 36, 36);
+    --accent-text-color: rgb(255, 255, 255);
+    --main-font-family: 'Passion One', cursive;
+    --secondary-font-family: 'Yesteryear', cursive;
+
+}
+
+html {
+    scroll-padding-top: 100px;
+    /* Adjusts the scroll padding for smooth scrolling */
+}
+
+
+body {
+    background-image: url(../images/theater-curtains.jpg);
+    background-size: 100% 120%;
+    /*Sets the background image to cover the entire body*/
+    background-attachment: fixed;
+    overflow-x: hidden;
+    /*removes left to right scrolling*/
+}
+
+/*NAVBAR*/
+
+.navbar {
+    background-color: var(--secondary-color);
+    border-bottom: 5px solid rgb(98, 0, 0);
+    height: 100px;
+}
+
+/*Affects the title in the navbar academy cinemas*/
+.navbar-brand {
+    font-family: var(--main-font-family);
+    font-size: 45px;
+    color: var(--main-color-accent);
+    padding-left: 30px;
+
+}
+
+.nav-link {
+    color: var(--main-color-accent);
+    font-family: var(--main-font-family);
+    font-size: 35px;
+}
+
+/*Affects the hover state of the links in the navbar*/
+
+.nav-link:hover {
+    color: var(--main-color-transparent);
+    text-shadow: 0 0 3px rgba(255, 123, 0, 0.6);
+}
+
+/*Sets the color of the link that has been clicked oon in other words the active link*/
+.nav-link:focus {
+    color: var(--accent-text-color);
+    text-shadow: 0 0 3px rgba(255, 123, 0, 0.6);
+}
+
+/*Adjust the left padding of navbar links*/
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1.5rem;
+}
+
+/*Movie drop down menu*/
+
+/*Targets the dropdown menu in the navbar*/
+.dropdown-menu {
+    border: none;
+    /*REmoves the border from the dropdown menu*/
+    border-radius: 0;
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.4);
+    /*Adds a shadow to the dropdown menu*/
+    background-color: var(--main-color);
+    padding: 0px;
+    /*Removes padding from the dropdown menu*/
+}
+
+/*Sets up the styling for each movie link in the dropdown menu*/
+.dropdown-item {
+    color: var(--accent-color);
+    /*Sets the color of the text in the dropdown menu*/
+    font-family: var(--main-font-family);
+    /*Sets the font family of the text in the dropdown menu*/
+    font-size: 30px;
+    /*Sets the font size of the text in the dropdown menu*/
+    padding-top: 15px;
+    /*Adds padding to the top of the text in the dropdown menu*/
+    text-align: center;
+    /*Centers the text in the dropdown menu*/
+    padding-bottom: 20px;
+    /*Adds padding to the bottom of the text in the dropdown menu*/
+    border-bottom: 2px solid rgb(117, 77, 13);
+    /*Adds a border to the bottom of each item in the dropdown menu*/
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: var(--accent-text-color);
+    /*Changes the color of the text when hovered or focused*/
+    background-color: var(--main-color-accent);
+    /*Changes the background color when hovered or focused*/
+}
+
+/*MOBILE MENU*/
+.navbar-toggler {
+    border: none;
+    /*Removes the border from the mobile menu button*/
+    transition: 0.5s ease;
+    /*Adds a transition effect to the mobile menu button*/
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 var(--bs-nav-toggler-focus-width) rgb(98, 0, 0);
+    /*Adds a shadow to the mobile menu button when focused*/
+    transition: 0.5s ease;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28237, 192, 3%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+
+/*HEADER IMAGE*/
+#header-image {
+    padding-top: 150px;
+}
+
+h1,
+h3,
+h4,
+h5,
+p {
+    cursor: default;
+    /*Prevents the text from being selected*/
+}
+
+/*GENERAL STYLING*/
+h1 {
+    font-family: var(--main-font-family);
+    font-size: 100px;
+    ;
+    color: var(--main-color-accent);
+    text-align: center;
+    text-shadow: 0 0 10px rgb(0, 0, 0, );
+}
+
+h3 {
+    font-family: var(--main-font-family);
+    font-size: 50px;
+
+}
+
+h4 {
+    font-family: var(--secondary-font-family);
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 30px;
+    font-family: var(--main-font-family);
+}
+
+b {
+    font-weight: 600;
+}
+
+img {
+    border-radius: 5px;
+    /*Rounds the corners of the images*/
+}
+
+/*MOVIE CARDS*/
+.container {
+    padding: 100px;
+}
+
+.card {
+    border: 5px solid var(--main-color);
+    /*Adds a border to the card*/
+    border-radius: 5px;
+    /*Rounds the corners of the card*/
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.card-body {
+    padding-top: 30px;
+    padding-left: 20px;
+}
+
+.spacer {
+    padding-top: 50px;
+    /*Adds space between the header and the movie cards*/
+}
+
+
+/*BUTTONS*/
+.btn {
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: var(--accent-color);
+    font-family: var(--main-font-family);
+    font-size: 18px;
+}
+
+.btn:focus {
+    border-color: transparent;
+    /*Removes the border from the button when focused*/
+    background-color: var(--main-color);
+    color: var(--accent-text-color);
+    /*Changes the color of the text when focused*/
+}
+
+.btn:hover {
+    border-color: transparent;
+    /*Removes the border from the button when hovered*/
+    background-color: var(--main-color);
+    /*Changes the background color when hovered*/
+    color: var(--accent-text-color);
+    /*Changes the color of the text when hovered*/
+}
+
+/*Added styling for yellow button*/
+/*This button is used to buy tickets*/
+.yellow-btn {
+    background-color: var(--main-color-accent);
+    /*Sets the background color of the button*/
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 25px;
+    color: var(--accent-color);
+    /*Sets the color of the text in the button*/
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.yellow-btn:hover {
+    background-color: var(--main-color-accent);
+    /*Changes the background color when hovered*/
+    color: var(--accent-text-color);
+    /*Changes the text color when hovered*/
+}
+
+/*TICKET CARDS*/
+
+/*Styles the card class within the element containing the tickets id   */
+#tickets .card {
+    padding: 40px;
+    height: 250px;
+    margin-right: 20px;
+    background-color: white;
+}
+
+.form-select {
+    font-family: var(--main-font-family);
+    /*Sets the font family of the select element*/
+    font-size: 20px;
+    /*Sets the font size of the select element*/
+    border: 3px solid var(--main-color);
+    /*Adds a border to the select element*/
+    transition: border-color 0.5s ease-in;
+}
+
+.form-select:focus {
+    border-color: var(--secondary-color);
+    box-shadow: none;
+    transition: 0.5s ease-in;
+}
+
+/*Select number of tickets input*/
+input[type="number"] {
+    width: 70px;
+    /*Sets the width of the input field*/
+    font-family: var(--main-font-family);
+    /*Sets the font family of the input field*/
+    font-size: 20px;
+    /*Sets the font size of the input field*/
+    border: 3px solid var(--main-color);
+    /*Adds a border to the input field*/
+    transition: border-color 0.5s ease-in;
+    padding: 5px;
+    /*Adds padding to the input field*/
+}
+
+input[type="number"]:focus {
+
+    border: 3px solid var(--secondary-color);
+    /*Changes the border color when focused*/
+    transition: 0.5s ease-in;
+    /*Adds a transition effect when focused*/
+    outline: 0;
+}
+
+/*CONTACT FORM*/
+.form-control {
+    border: 3px solid var(--main-color);
+    /*Adds a border to the input field*/
+    transition: 1s ease;
+}
+
+.form-control:focus {
+    color: #212529;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0px .25rem var(--main-color);
+}
+
+/*Adjusts the contact form submit button to the right of the screen*/
+#contact-submit {
+    float: right;
+}
+
+/*FOOTER*/
+footer {
+    border-top: 5px solid var(--main-color);
+    /*Adds a border to the top of the footer*/
+    background-color: rgba(0, 0, 0, 0.6);
+    /*Sets the background color of the footer*/
+    margin: 0px -15px 0px -15px;
+    /*Removes the margin from the footer*/
+}
+
+.footer-text {
+    font-family: var(-main-font-family);
+    /*Sets the font family of the text in the footer*/
+    color: var(--accent-text-color);
+    /*Sets the color of the text in the footer*/
+    font-size: 30px;
+    /*Sets the font size of the text in the footer*/
+
+}
+
+/*Styles the footer image*/
+.footer-image {
+    width: auto;
+    /*Sets the width of the image in the footer*/
+    height: 130px;
+}
+
+    /*popovers*/
+
+    .star-rating {
+        width: 80%;
+    }
+
+    /*Toast*/
+    .custom-toast{
+        position: fixed; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        z-index: 1000; 
+    }
+
+    /* Base callout style */
+.callout {
+  position: absolute;
+  background-color: #f1f9ff;
+  border-left: 5px solid #0dcaf0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  color: #0c5460;
+  display: none;
+  z-index: 1000;
+  width: 300px;
+}
+
+.callout-info {
+  background-color: #e9f7fe;
+  border-color: #0dcaf0;
+}
