@@ -3,23 +3,14 @@
 
 <body>
 
-    <div id="demo">
-        <h1>The XMLHttpRequest Object</h1>
-        <button type="button" onclick="loadDoc()">Change Content</button>
-    </div>
+    <h1>Window Document Object</h1>
+    <h2>The URL Property</h2>
+
+    <p id="demo"></p>
 
     <script>
-        function loadDoc() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("demo").innerHTML =
-                        this.responseText;
-                }
-            };
-            xhttp.open("GET", "ajax_info.html", true);
-            xhttp.send();
-        }
+        let url = window.document.URL;
+        document.getElementById("demo").innerHTML = url;
     </script>
 
 </body>
