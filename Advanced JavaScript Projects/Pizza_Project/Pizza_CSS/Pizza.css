@@ -7,6 +7,7 @@ body {
 /* All H1s */
 h1 {
     font-family: "Baloo 2", system-ui, sans-serif;
+    font-size: 4vw;
     color: #1a1a1a;
     box-shadow: #2c6e49;
     text-shadow: 0 4px 0 rgba(0, 0, 0, 0.08), 0 0 18px rgba(255, 77, 109, .25);
@@ -89,4 +90,22 @@ div {
     box-shadow: #2c6e49;
     background-color: #142018;
     letter-spacing: 0.5px;
+}
+
+h3 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 200px;
+    }
 }

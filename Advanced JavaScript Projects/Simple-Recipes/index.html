@@ -9,7 +9,7 @@
 
 <body>
     <!--NAVBAR-->
-    <nav class="nav-bar">
+    <nav class="nav-bar sticky">
         <ul>
             <li><a href="#">Home</a></li>
 
@@ -608,6 +608,35 @@
 
         </div>
     </section>
+    </section> <!-- closes the Contact section -->
+
+    <!-- Login Form Section -->
+    <section>
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Open Login Form Button -->
+    <section>
+        <div class="container" style="text-align: center; margin: 2rem 0;">
+            <button class="btn" onclick="openForm()">Login</button>
+        </div>
+    </section>
+
+
     <!--FOOTER-->
     <footer>
         <table>
