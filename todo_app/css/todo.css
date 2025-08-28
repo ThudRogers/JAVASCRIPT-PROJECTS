@@ -1,0 +1,51 @@
+html {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+input {
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 14px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Ensures the footer spans the full width */
+}
+
+.remove{
+    padding-bottom: 5px; 
+}
